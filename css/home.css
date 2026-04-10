@@ -1,0 +1,154 @@
+
+.home-hero {
+    padding: 10rem 0 9rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.home-shapes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: rgba(16, 185, 129, 0.3);
+    filter: blur(100px);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.home-hero .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-hero .h1 {
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.section-badge {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.section-badge-green {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--secondary);
+}
+
+.section-subtitle {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+.section-cta {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.btn-cta {
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+}
+
+.events-section {
+    padding: 8rem 0;
+    background: var(--surface-color);
+}
+
+.events-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.event-card {
+    background: var(--surface-color);
+    padding: 2rem;
+    border-left: 4px solid var(--secondary);
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: var(--transition);
+}
+
+.event-card:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.event-date {
+    text-align: center;
+    min-width: 80px;
+    background: var(--surface-alt);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+}
+
+.event-date .month {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--secondary);
+    text-transform: uppercase;
+}
+
+.event-date .day {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-main);
+    line-height: 1;
+    margin-top: 0.25rem;
+}
+
+.event-body {
+    flex-grow: 1;
+}
+
+.event-title {
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+}
+
+.event-time {
+    margin-bottom: 0.5rem;
+}
+
+.event-desc {
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+.event-action-btn {
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: stretch;
+    }
+    .home-hero {
+        padding: 8rem 0 5rem;
+    }
+}

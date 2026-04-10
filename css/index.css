@@ -1,0 +1,270 @@
+
+.cafe-hero {
+    background: linear-gradient(rgba(69, 26, 3, 0.7), rgba(69, 26, 3, 0.9)), url('../images/hero-bg.jpg') center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-shapes {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    background: rgba(245, 158, 11, 0.5);
+    filter: blur(80px);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.cafe-hero .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+}
+
+.cafe-hero .h1 {
+    color: white;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+
+
+.hero-subtitle {
+    color: rgba(255,255,255,0.9);
+    max-width: 500px;
+    margin: 1rem 0 2.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-glass-btn {
+    color: white;
+    border-color: rgba(255,255,255,0.3);
+}
+
+.hero-special-card {
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    text-align: left;
+}
+
+.hero-special-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 1rem;
+}
+
+.hero-special-title {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.hero-special-price {
+    background: var(--primary);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.hero-special-name {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.hero-special-desc {
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.hero-special-link {
+    color: var(--primary);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-badge {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.section-badge-green {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--secondary);
+}
+
+.section-subtitle {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+.section-cta {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.btn-cta {
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+}
+
+.menu-section {
+    background: var(--bg-color);
+    padding: 6rem 0;
+    position: relative;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px dashed #d1d5db;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+}
+
+.menu-item:hover {
+    color: var(--primary);
+    padding-left: 0.5rem;
+}
+
+.menu-item .name {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.menu-desc {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+.events-section {
+    padding: 8rem 0;
+    background: var(--surface-color);
+}
+
+.events-container {
+    max-width: 900px;
+}
+
+.event-card {
+    background: var(--surface-color);
+    padding: 2rem;
+    border-left: 4px solid var(--primary);
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: var(--transition);
+}
+
+.event-card:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.event-date {
+    text-align: center;
+    min-width: 80px;
+    background: var(--surface-alt);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+}
+
+.event-date .month {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.event-date .day {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-main);
+    line-height: 1;
+    margin-top: 0.25rem;
+}
+
+.event-body {
+    flex-grow: 1;
+}
+
+.event-title {
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+}
+
+.event-time {
+    margin-bottom: 0.5rem;
+}
+
+.event-desc {
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+.event-action-btn {
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: stretch;
+    }
+    .cafe-hero {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+    .cafe-hero .container {
+        flex-direction: column;
+    }
+}
