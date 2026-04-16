@@ -13,63 +13,66 @@
 
 .auth-page {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
+    margin: 0;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-.back-to-home-btn {
+.auth-top-actions {
     position: absolute;
     top: 2rem;
-    left: 2rem;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
+    right: 2rem;
     display: flex;
-    align-items: center;
     gap: 0.5rem;
-    opacity: 0.8;
-    transition: all 0.3s ease;
-    background: rgba(0,0,0,0.4);
-    backdrop-filter: blur(5px);
-    padding: 0.75rem 1.25rem;
-    border-radius: 30px;
     z-index: 10;
 }
 
-.back-to-home-btn:hover {
-    opacity: 1;
-    transform: translateX(-5px);
-    background: rgba(0,0,0,0.6);
-    color: white;
+.auth-top-actions .theme-toggle-btn {
+    color: white !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(5px);
+}
+
+.auth-top-actions .theme-toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: white !important;
 }
 
 .auth-page-register {
-    padding: 4rem 2rem;
+    /* Removed padding to maintain center */
 }
 
 .auth-container {
     background: var(--surface-color);
     backdrop-filter: blur(10px);
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     border-radius: var(--radius-lg);
     box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
-    padding: 3rem;
+    padding: 2rem;
     border: 1px solid var(--border-color);
+}
+/* Hide scrollbar for cleaner look if needed */
+.auth-container::-webkit-scrollbar {
+    width: 6px;
+}
+.auth-container::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 4px;
 }
 
 .auth-container-wide {
-    max-width: 800px;
+    max-width: 650px;
 }
 
 .auth-header {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .auth-logo {
@@ -83,11 +86,11 @@
 
 .form-control {
     width: 100%;
-    padding: 0.875rem 1rem;
+    padding: 0.75rem 1rem;
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-top: 0.5rem;
     transition: var(--transition);
     background: var(--surface-alt);
